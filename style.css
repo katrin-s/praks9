@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+body, html {
+    font-size: 18px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #E5E5E5;
+    overflow-x: hidden;
+} 
+
+* li {
+    list-style: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+* h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.hamburger {
+    display: none;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    color: white;
+    background-color: #1CAAAA;
+}
+
+nav {
+    display: block;
+    width: 89%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+}
+
+nav img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-top: 20px;
+    object-fit: cover;
+    float: left;
+    background-color: white;
+}
+
+nav ul {
+    float: right;
+    display: flex;
+}
+
+nav ul li {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 40px 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+	background-color: transparent;
+	
+}
+
+nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+nav a.active {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+}
+
+
+#hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2d7b1bd980752bb3ea0a259f528eae78&auto=format&fit=crop&w=1350&q=80");
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.asukoht {
+    display: flex;
+    width: 89%;
+    margin: 20px auto;
+    flex-direction: column;
+}
+
+.location {
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 200%;
+}
+
+p {
+    margin-top: 10px;
+}
+
+.maps {
+    margin: auto;
+    padding-top: 20px;
+}
+
+footer {
+    width: 100%;
+    background-color: white;
+    min-height: 350px;
+    position: relative;
+    bottom: 0;
+    color: black;
+}
+
+.footer-content {
+    display: flex;
+    width: 89%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    line-height: 170%;
+}
+
+div.footer-item-1, div.footer-item-2, div.footer-item-3 {
+    padding-right: 20px;
+    padding-top: 20px;
+    flex-shrink: 0;
+    width: 32.5%;
+}
+
+footer img {
+    width: 160px;
+    height: auto;
+    padding: 10px;
+}
+
+.loomad {
+    margin: 120px auto 0 auto;
+}
+
+.leitud {
+    margin: 120px auto 0 auto;
+}
+
+.kuidas {
+    width: 89%;
+    margin: 120px auto 0 auto;
+    text-align: center;
+}
+
+.toetused {
+    display: flex;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.materiaalne, .rahaline, .vabatahtlik {
+    padding-right: 20px;
+    line-height: 140%;
+    flex-shrink: 0;
+    width: 32.5%;
+}
+
+.kuidas>h2 {
+    padding-bottom: 40px;
+}
+
+.meist {
+    margin: 120px auto 0 auto;
+    display: flex;
+    width: 89%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.meist>p {
+    padding-left: 20%;
+    padding-right: 20%;
+    line-height: 200%;
+}
+
+.meist>img {
+    width: 70vw;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.kontaktid {
+    display: flex;
+    width: 89%;
+    margin: 120px auto 0 auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+.kontakt-item-1 {
+    width: 60%;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 200%;
+}
+
+@media only screen and (max-width: 1340px) {
+
+footer img {
+    width: 120px;  
+}
+    
+}
+
+@media only screen and (max-width: 1240px) {
+    
+    nav a {
+    display: none;
+    }
+    
+    .hamburger {
+	display: block;
+	float: right;
+	margin-top: -40px;
+    margin-right: 6%;
+	position: relative;
+}
+
+    .hamburger span {
+	background: white;
+	width: 30px;
+	height: 5px;
+	display: block;
+	margin-bottom: 4px;
+}
+    
+    #hero-image {
+    display: none;
+    }
+    
+    .asukoht {
+    margin-top: 120px;
+    }
+    
+    .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+    
+    div.footer-item-1 {
+    order: 1;
+    padding-bottom: 0;
+    width: auto;
+    }
+    
+    div.footer-item-2 {
+    order: 3;
+    margin-bottom: 20px;
+    width: auto;
+    }
+    
+    div.footer-item-3 {
+    order: 2;
+    width: auto;
+    }
+    
+    .toetused {
+    flex-direction: column;
+    text-align: center;
+}
+
+    .materiaalne, .rahaline, .vabatahtlik {
+    padding-right: 0;
+    line-height: 140%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+    
+
+}
+
